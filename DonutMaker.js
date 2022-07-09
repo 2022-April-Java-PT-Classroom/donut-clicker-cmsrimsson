@@ -29,11 +29,11 @@ class DonutMaker{
 
 
     addDonut() {
-        this.numDonuts += 1;
+        this.numDonuts += this.multiplier;
     }
 
     addAutoClicker() {
-    //    let autoCost = 100;
+    
        for (let i = 0; i < this.numAutoClickers; i ++ ){
         this.autoClickerCost += this.autoClickerCost * 0.1;
         }
@@ -43,7 +43,7 @@ class DonutMaker{
       }
     }
 
-    multipliers(){
+    addMultipliers(){
         for (let i = 0; i < this.multiplier; i ++ ){
             this.numMultliplierCost += this.numMultliplierCost * 0.1;
             }
@@ -61,13 +61,13 @@ class DonutMaker{
         clickerCost.innerText = Math.round(this.autoClickerCost);
     }
 
-    donutClickerUpdate(){
+    donutMuliplierUpdate(){
         const numberMultiplier = document.querySelector("#donut-multiplier");
         const multliplierCost = document.querySelector("#multiplier-cost");
         const numberPerClick = document.querySelector("#number-per-click");
 
         numberMultiplier.innerText = this.numMultiplier;
-        numberPerClick.innerText = Math.random(this.multiplier);
+        numberPerClick.innerText = Math.round(this.multiplier);
         this.numMultliplierCost = this.multliplierCost * 1.1;
         multliplierCost.innerText = Math.round(this.multliplierCost);
     }
