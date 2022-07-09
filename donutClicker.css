@@ -1,0 +1,25 @@
+*{
+    background-color: antiquewhite;
+}
+
+header{
+    background-color: aquamarine;
+   
+}
+#navbar{
+    display: flex;
+    
+}
+
+h1{
+    font-family: cursive;
+    font-size: 30px;
+}
+
+
+
+
+
+
+
+
