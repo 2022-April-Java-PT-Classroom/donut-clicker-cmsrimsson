@@ -3,10 +3,8 @@ import DonutMaker from "./DonutMaker";
 const donuts = document.querySelector("#number-Donuts");
 const donutsMaker = document.querySelector("#donut-maker-button");
 
-const autoClicker = document.querySelector("#auto-clicker");
 const clickerButton = document.querySelector("#auto-clicker-button");
-
-const donutMultplier = document.querySelector("#donut-multiplier-button")
+const donutMultiplier = document.querySelector("#donut-multiplier-button")
 
 const resetGame = document.querySelector("#reset-game");
 
@@ -39,11 +37,18 @@ resetGame.addEventListener("click", ()=> {
   donuts.innerText = 0;
 });
 
-donutMultplier.addEventListener("click", ()=> {
+donutMultiplier.addEventListener("click", ()=> {
   donutMaker.addMultipliers();
   donutMaker.donutMuliplierUpdate();
   donutMaker.donutCountUpdate();
 });
+
+const hideButton = document.querySelector(".hide");
+const disccription = document.querySelector(".details");
+hideButton.onclick = function() {
+  disccription.style.display = "block";
+};
+
 
 
 // const container = (document.querySelector('.container'));

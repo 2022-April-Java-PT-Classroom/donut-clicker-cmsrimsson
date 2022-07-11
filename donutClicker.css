@@ -1,10 +1,7 @@
 *{
     background-color: antiquewhite;
+    
 }
-
-/* header {
-    background-color: aquamarine;
- } */
 
 nav {
     display: flex;
@@ -14,7 +11,12 @@ nav {
     width: 100%;
     
 }
-
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 h1 {
     font-family: cursive;
     font-size: 30px;
@@ -22,10 +24,10 @@ h1 {
     justify-content: center;
 }
 .details {
-    background-color: beige;
+    background-color: rgb(110, 110, 9);
     display: none;
-    position: relative;
-    padding: 10px 10px;
+    position: absolute;
+    padding: 0 20px 0 20px;
     top: 90%;
     width: 90%;
     overflow: hidden;
@@ -36,7 +38,7 @@ h1 {
     width: 20%;
     border: 2px;
     border-radius: 3px;
-    text-align: center;
+    text-align: left;
     position: relative;
     color: darkgreen;
     font-family: cursive;
@@ -49,11 +51,116 @@ h1 {
     background-color: rgb(226, 235, 151);
 }
 
-.cointainer, section {
+
+.container, section {
     display: grid;
-  grid-row: auto;
+    grid-row: auto;
     justify-content: center;
 }
+
+#number-donuts {
+font-size: 50px;
+color: blue;
+}
+
+.donuts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.multiplier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+body {
+    background-image: url(/images/dunkin-donut.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    z-index: 0;
+}
+#donut-maker-button {
+    border: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    height: 210px;
+    width: 210px;
+}
+#donut-maker-button img{
+    border: 1px;
+    padding: 1px;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+#donut-maker-button img:hover {
+    background-color: rgb(22, 24, 2);
+    cursor: pointer;
+}
+
+#auto-clicker-button {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+#auto-clicker-button:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+
+#donut-multiplier-button {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+#donut-multiplier-button:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+
+#reset-game {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+   
+}
+
+#reset-game:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
 
 
 
