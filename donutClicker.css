@@ -1,0 +1,301 @@
+*{
+    background-color: rgb(223, 210, 193);
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: blue;
+    position: relative;
+    width: 100%;
+    
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+h1 {
+    font-family: cursive;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    color: rgb(122, 14, 50)
+}
+h2 {
+    font-family: cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(46, 42, 110)
+
+}
+.details {
+    background-color: rgb(126, 126, 45);
+    font-style: italic;
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: .6em;
+}
+
+.details1 {
+    background-color: rgb(126, 126, 45);
+    font-style: italic;
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: .6em;
+}
+
+.details2 {
+    background-color: rgb(126, 126, 45);
+    font-style: italic;
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: .6em;
+}
+
+.hide {
+    background-color: blue;
+    padding: 10px;
+    width: 30%;
+    border: 2px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    color: darkgreen;
+    font-family: cursive;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+.hide1 {
+    background-color: blue;
+    padding: 10px;
+    width: 30%;
+    border: 2px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    color: darkgreen;
+    font-family: cursive;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+.hide2 {
+    background-color: blue;
+    padding: 10px;
+    width: 30%;
+    border: 2px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    color: darkgreen;
+    font-family: cursive;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+
+ .hide:hover {
+    background-color: rgb(226, 235, 151);
+}
+.hide1:hover {
+    background-color: rgb(226, 235, 151);
+}
+.hide2:hover {
+    background-color: rgb(226, 235, 151);
+}
+
+
+
+.container, section {
+    display: grid;
+    grid-row: auto;
+    justify-content: center;
+}
+
+#number-donuts {
+font-size: 50px;
+color: blue;
+}
+
+.donuts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clicker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.multiplier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+body {
+    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    z-index: 0;
+}
+#donut-maker-button {
+    border: 5px;
+    padding: 5px;
+    border-radius: 20px;
+    height: 210px;
+    width: 210px;
+}
+#donut-maker-button img{
+    border: 1px;
+    padding: 1px;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+}
+
+#donut-maker-button img:hover {
+    background-color: rgb(22, 24, 2);
+    cursor: pointer;
+}
+
+#auto-clicker-button {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+#auto-clicker-button:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+
+#donut-multiplier-button {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 100px;
+    width: 100px;
+}
+
+#donut-multiplier-button:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+
+#reset-game {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+   
+}
+
+#reset-game:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+#reset {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+   
+}
+
+#reset:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+#resetI {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px; 
+}
+#resetI:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+#resetC {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px; 
+}
+#resetC:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+
+footer{
+ background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-top: 100px;
+    
+
+   
+}
+

@@ -4,10 +4,83 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="donutClicker.css">
     <title>Donut Clicker</title>
   </head>
-  <body>
-    <div class="container"></div>
-    <script src="./index.js"></script>
+
+  
+    <header>
+    <nav class="navbar"> 
+
+      <button type="button" class="hide"> Fed Baking Company </button>
+        <div class="details">
+          <p>Fred the Baker Baking Company is tired of making real donuts and is ready to retire. He  help to keep his love of
+             donuts alive. He wants you to enjoy this game that user can create virtual donuts for the world 
+             to enjoy.</p>
+             <button id="reset">Go Back</button>
+        </div>
+
+      <button type="button" class="hide1"> Inspiration </button>
+      <div class="details1">
+        <p>CLick this link to play famous cookieclicker game: </p>
+          <a href="https://orteil.dashnet.org/cookieclicker/"> CookieClikerGame</a><br><br>
+          <button id="resetI">Go Back</button>
+      </div>
+
+        <button type="button" class="hide2"> Contact </button>
+        <div class="details2">
+          <p>Consistently recognized for superior  problem-solving skills, strong work ethic and passion for serving others at Amazon. Highly motivated and learning oriented candidate reskilling to switch careers into software development. 
+          </p>
+          <a href="https://github.com/cmsrimsson">Github</a><br><br>
+          <a href="https://www.linkedin.com/in/chuda-rimal-318b33201/">Linkedin</a><br><br>
+          <button id="resetC">Go Back</button>
+        </div>
+    </nav>
+
+    <h1> Welcome to the "Fred the Baker Baking Company" </h1>
+    
+  </header>
+
+<body>
+  <div class="container">
+
+    <section class="donuts">
+      <h2>No.Of Donut Created: </h2>
+      <p id="number-donuts">  0  </p>
+      <p>Donut Per Click</p>
+      <p id="number-per-click">1</p>
+      <button id="donut-maker-button"> <img src="./images/dunkin-donut.jpg"></button>
+      <br><br>
+    </section>
+
+    <section class="clicker">
+      <h2>Auto Clicker: </h2>
+      <p id="auto-clicker">  0  </p>
+      <p>Auto Clicker Cost</p>
+      <p id="clicker-cost"> 100</p>
+      <button id="auto-clicker-button"> AutoClicker</button>
+    </section>
+
+    <section class="multiplier">
+      <h2>Multiplier: </h2>
+      <p id="donut-multiplier">  0  </p>
+      <p>Multiplier Cost</p>
+      <p id="multiplier-cost"> 20 </p>
+      <button id="donut-multiplier-button"> Multiplier</button>
+    </section>
+    <br> <br>
+
+    <button id="reset-game">Reset Game</button>
+    </div>
+    
+    <div>
+<footer>&copy cmsrimsson, WCCI-2022</footer>
+
+  </div>
+
+  <script src="./DonutMaker.js"></script>
+  <script src="./app.js"></script>
+
   </body>
 </html>
