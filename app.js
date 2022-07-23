@@ -73,5 +73,3 @@ reset3.addEventListener("click", ()=> {
 });
 
 
-// const container = (document.querySelector('.container'));
-// container.innerText = 'mmmmmmmmm doughnuts.... ahhhhhhh!  wow !';
