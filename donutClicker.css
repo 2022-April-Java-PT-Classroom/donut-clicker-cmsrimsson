@@ -1,12 +1,12 @@
 *{
-    background-color: antiquewhite;
+    background-color: rgb(223, 210, 193);
     
 }
 
 nav {
     display: flex;
     flex-direction: row;
-    background-color: blueviolet;
+    background-color: blue;
     position: relative;
     width: 100%;
     
@@ -16,40 +16,121 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 h1 {
     font-family: cursive;
     font-size: 30px;
     display: flex;
     justify-content: center;
+    color: rgb(122, 14, 50)
+}
+h2 {
+    font-family: cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: rgb(46, 42, 110)
+
 }
 .details {
-    background-color: rgb(110, 110, 9);
+    background-color: rgb(126, 126, 45);
+    font-style: italic;
     display: none;
     position: absolute;
-    padding: 0 20px 0 20px;
     top: 90%;
     width: 90%;
     overflow: hidden;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: .6em;
 }
+
+.details1 {
+    background-color: rgb(126, 126, 45);
+    font-style: italic;
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: .6em;
+}
+
+.details2 {
+    background-color: rgb(126, 126, 45);
+    font-style: italic;
+    display: none;
+    position: absolute;
+    top: 90%;
+    width: 90%;
+    overflow: hidden;
+    font-size: 20px;
+    padding-top: 1em;
+    padding-left: 50px;
+    padding-right: 10px;
+    padding-bottom: .6em;
+}
+
 .hide {
     background-color: blue;
     padding: 10px;
-    width: 20%;
+    width: 30%;
     border: 2px;
     border-radius: 3px;
-    text-align: left;
+    text-align: center;
     position: relative;
     color: darkgreen;
     font-family: cursive;
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+   
+}
+.hide1 {
+    background-color: blue;
     padding: 10px;
+    width: 30%;
+    border: 2px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    color: darkgreen;
+    font-family: cursive;
+    font-size: 25px;
+    cursor: pointer;
+   
+}
+.hide2 {
+    background-color: blue;
+    padding: 10px;
+    width: 30%;
+    border: 2px;
+    border-radius: 3px;
+    text-align: center;
+    position: relative;
+    color: darkgreen;
+    font-family: cursive;
+    font-size: 25px;
+    cursor: pointer;
+   
 }
 
  .hide:hover {
     background-color: rgb(226, 235, 151);
 }
+.hide1:hover {
+    background-color: rgb(226, 235, 151);
+}
+.hide2:hover {
+    background-color: rgb(226, 235, 151);
+}
+
 
 
 .container, section {
@@ -85,7 +166,7 @@ color: blue;
     grid-template-columns: 1fr 1fr 1fr;
 }
 body {
-    background-image: url(/images/dunkin-donut.jpg);
+    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -161,7 +242,60 @@ body {
     cursor: pointer;
 }
 
+#reset {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px;
+   
+}
 
+#reset:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
 
+#resetI {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px; 
+}
+#resetI:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
+#resetC {
+    background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 50px;
+    width: 100px; 
+}
+#resetC:hover {
+    background-color: rgb(96, 196, 109);
+    cursor: pointer;
+}
 
+footer{
+ background-color: rgb(35, 70, 226);
+    cursor: pointer;
+    border: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    height: 20px;
+    width: 100%;
+    margin-top: 100px;
+    
+
+   
+}
 

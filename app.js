@@ -48,7 +48,29 @@ const disccription = document.querySelector(".details");
 hideButton.onclick = function() {
   disccription.style.display = "block";
 };
+const hideButton1 = document.querySelector(".hide1");
+const disccription1 = document.querySelector(".details1");
+hideButton1.onclick = function() {
+  disccription1.style.display = "block";
+};
+const hideButton2 = document.querySelector(".hide2");
+const disccription2 = document.querySelector(".details2");
+hideButton2.onclick = function() {
+  disccription2.style.display = "block";
+};
 
+const reset1 = document.querySelector("#reset");
+reset1.addEventListener("click", ()=> {
+  location.reload();
+});
+const reset2 = document.querySelector("#resetI");
+reset2.addEventListener("click", ()=> {
+  location.reload();
+});
+const reset3 = document.querySelector("#resetC");
+reset3.addEventListener("click", ()=> {
+  location.reload();
+});
 
 
 // const container = (document.querySelector('.container'));

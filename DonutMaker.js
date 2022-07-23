@@ -5,10 +5,10 @@ class DonutMaker{
     constructor(){
         this.numDonuts = 0;
         this.numAutoClickers = 0;
-        this.autoClickerCost = 100;
+        this.autoClickerCost = 10;
         this.multiplier = 1;
         this.numMultiplier= 0;
-        this.numMultliplierCost =20;
+        this.numMultiplierCost =20;
         
     }
 
@@ -18,22 +18,22 @@ class DonutMaker{
     getNumAutoClicker(){
         return this.numAutoClickers;
     }
-    getAutoClickerCost(){
-        return this.autoClickerCost;
-    }
+    // getAutoClickerCost(){
+    //     return this.autoClickerCost;
+    // }
     getMultiplier(){
         return this.multiplier
     }
     getNumMultiplier(){
         return this.numMultiplier;
     }
-    getNumMultiplierCost(){
-    return this.numMultliplierCost;
-    }
+    // getNumMultiplierCost(){
+    // return this.numMultliplierCost;
+    // }
 
 
     addDonut() {
-        this.numDonuts += 1;
+        this.numDonuts += this.multiplier;
     }
 
     addAutoClicker() {
@@ -44,13 +44,12 @@ class DonutMaker{
         if(this.numDonuts >= this.autoClickerCost){
         this.numDonuts -= this.autoClickerCost;
         this.numAutoClickers += 1;
-        
-      }
+         }
     }
 
      autoClickerUpdate(){
         const numClicker = document.querySelector("#auto-clicker");
-        const clickerCost =document.querySelector("#clicker-cost");
+        const clickerCost = document.querySelector("#clicker-cost");
         numClicker.innerText = this.numAutoClickers;
         this.autoClickerCost =this.autoClickerCost * 1.1;
         clickerCost.innerText = Math.round(this.autoClickerCost);
@@ -58,24 +57,26 @@ class DonutMaker{
 
     addMultipliers(){
         for (let i = 0; i < this.numMultiplier; i ++ ){
-            this.numMultliplierCost += this.numMultliplierCost * 0.1;
+            this.numMultiplierCost += this.numMultiplierCost * 0.1;
             }
-         if(this.numDonuts >= this.numMltliplierCost){
-           this.numDonuts -= this.numMultliplierCost;
-           this.numMultliplier += 1;
+         if(this.numDonuts >= this.numMultiplierCost){
+           this.numDonuts -= this.numMultiplierCost;
+           this.numMultiplier += 1;
+           
          }
     }
 
    
     donutMuliplierUpdate(){
         const numberMultiplier = document.querySelector("#donut-multiplier");
-        const multliplierCost = document.querySelector("#multiplier-cost");
+        const multiplierCost = document.querySelector("#multiplier-cost");
         const numberPerClick = document.querySelector("#number-per-click");
 
+        this.numMultiplierCost = this.numMultiplierCost * 1.1;
+        multiplierCost.innerText = Math.round(this.numMultiplierCost);
+
         numberMultiplier.innerText = this.numMultiplier;
-        numberPerClick.innerText = Math.round(this.numMultiplier);
-        this.numMultliplierCost = this.numMultliplierCost * 1.1;
-        multliplierCost.innerText = Math.round(this.numMultliplierCost);
+        numberPerClick.innerText = this.numMultiplier;
     }
 
     donutCountUpdate(){
